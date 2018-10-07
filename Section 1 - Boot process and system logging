@@ -1,0 +1,21 @@
+
+    Section 1 - Boot Process and System Logging
+  - BIOS
+    - is OS independent.
+    - Performs the POST(Power on Self Test), checks hardware components, only proceeds if successful.
+    - Knows of bootable devices, hard drives, usb drives, dvd drives etc.
+  - BootLoader
+    - Start the OS.
+  - initrd(Initial RAM disk)
+    - Temporary filesystem loaded into memory when system boots.
+  - /boot
+    - Contains the files required to boot linux. initrd, kernel, boot loader config.
+  - Kernel ring buffer
+    - Contains messages from the linux kernel.
+    - /var/log/dmesg or dmesg command to view.
+  - Systemd
+    - Specify targets to configure linux run level (single user, multi user, reboot etc)
+    - /lib/systemd/system
+
+  - Linux uses the syslog standard.
+  - syslog config is /etc/rsyslog.conf

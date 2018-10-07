@@ -1,0 +1,20 @@
+
+    Section 2 - Disk Management
+  - Disks can be divided into partitions, allowing you to separate data.
+  - MBR
+    - Master Boot Record - Contains information on how logical partitions are organised.
+    - Being phased out by GPT.
+    - Allows for up to 4 primary partitions.
+  - GPT
+    - Part of UEFI, which is replacing BIOS.
+    - Supports up to 128 partitions.
+    - Up to 9.4ZB disk size.
+    - Not supported on older OS.
+  - Mount point.
+    - Directory used to access data on a partition.
+    - / dir is always a mount point.
+  - fdisk
+    - Used to create partitions on a disk.
+  - File systems
+    - Use mkfs command to make filesystem.
+    - ext is most widely used linux filesystem type.
